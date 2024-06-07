@@ -32,7 +32,6 @@ function Gestionar-Datos {
     }
     
     PROCESS {
-        Throw "Nada"
         # si se han usado los dos parámetros que permiten introducir datos, salir con un error
         if (($DatoEntrada) -and ($RutaDatoEntrada -ne "")) {
             Throw "Parece que has intentado introducir datos tanto desde una ruta como desde la Pipeline o a través del parámetro -DatoEntrada. Debes escoger solamente uno de los dos métodos."
